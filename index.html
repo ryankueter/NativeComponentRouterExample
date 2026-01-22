@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Router Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <nav>
+      <div class="logo">SPA Router</div>
+      <nav-link href="/">Home</nav-link>
+      <nav-link href="/about">About</nav-link>
+      <nav-link href="/user/123">User 123</nav-link>
+      <nav-link href="/user/456">User 456</nav-link>
+      <nav-link href="/product/laptop/details">Product Details</nav-link>
+      <nav-link href="/search?q=laptop&category=electronics">Search Example</nav-link>
+      <nav-link href="/docs/api/users/create">API Docs</nav-link>
+      <nav-link href="/users">API Users</nav-link>
+      <nav-link href="/posts">API Posts</nav-link>
+      <nav-link href="/custom">Custom Components</nav-link>
+    </nav>
+    
+    <app-router id="main-router"></app-router>
+  </div>
+
+  <script src="js/router.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
